@@ -13,7 +13,7 @@ navigator.connection.addEventListener('change', function () {
 
 function log(text: string): void {
   const item = document.createElement('li')
-  item.textContent = text
+  item.textContent = `[${new Date().toLocaleTimeString()}] ${text}`
   list.append(item)
 }
 
