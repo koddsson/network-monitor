@@ -11,7 +11,7 @@
     "build:css": "postcss src/css/index.css -o dist/index.css",
     "prebuild:js:prod": "npm run build:css",
     "build:js:prod": "esbuild src/js/index.ts --minify --bundle --format=esm --outfile=dist/index.js",
-    "lint": "eslint src/**/*",
+    "lint": "eslint src/**/*.ts",
     "start": "web-dev-server",
     "test": "web-test-runner"
   },
