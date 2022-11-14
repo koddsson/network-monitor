@@ -14,7 +14,7 @@ navigator.connection.addEventListener('change', function () {
 function log(text: string): void {
   const item = document.createElement('li')
   item.textContent = `[${new Date().toLocaleTimeString()}] ${text}`
-  list.append(item)
+  list.prepend(item)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
