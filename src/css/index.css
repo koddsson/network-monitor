@@ -3,4 +3,14 @@
 
 body {
   background-color: var(--yellow-5);
+  padding: var(--size-1) var(--size-3);
+}
+
+#events {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-4);
+}
+
+:where(li) {
+  max-inline-size: unset;
 }
